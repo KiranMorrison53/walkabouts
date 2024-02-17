@@ -1,0 +1,49 @@
+* {
+    font-family: "Nunito", sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+body {
+    /* padding: 20px; */
+    text-align: center;
+}
+
+#map {
+    height: 100vh;
+}
+
+.leaflet-popup {
+    /* width: 100px; */
+    white-space: normal;
+}
+
+#popup-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#popup-card a,
+#popup-card img,
+#popup-card h1 {
+    text-align: center;
+}
+
+.marker-cluster span {
+    font-weight: bold;
+}
+
+::backdrop {
+    background-image: linear-gradient(45deg,
+            magenta,
+            rebeccapurple,
+            dodgerblue,
+            green);
+    opacity: 0.75;
+}
