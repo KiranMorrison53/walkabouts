@@ -34,18 +34,18 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-/*Legend specific*/
-var legend = L.control({ position: "bottomleft" });
+// /*Legend specific*/
+// var legend = L.control({ position: "topright" });
 
-legend.onAdd = function (map) {
-    var div = L.DomUtil.create("div", "legend");
-    div.innerHTML += "<h4>Key</h4>";
-    div.innerHTML += '<p>😀 0-4 km</p>';
-    div.innerHTML += '<p>😮‍💨 4-9 km</p>';
-    div.innerHTML += '<p>🥵 9+ km</p>';
-    return div;
-};
-legend.addTo(map);
+// legend.onAdd = function (map) {
+//     var div = L.DomUtil.create("div", "legend");
+//     div.innerHTML += "<h4>Key</h4>";
+//     div.innerHTML += '<p>😀 0-4 km</p>';
+//     div.innerHTML += '<p>😮‍💨 4-9 km</p>';
+//     div.innerHTML += '<p>🥵 9+ km</p>';
+//     return div;
+// };
+// legend.addTo(map);
 
 
 function onEachFeature(feature, layer) {
